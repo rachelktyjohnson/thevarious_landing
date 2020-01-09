@@ -24,7 +24,6 @@
             <input type="email" name="your_email" id="your_email" required/>
             <input class="submit-button" type="submit" value="GO">
           </div>
-
         </form>
       </div>
       <div class="social-media">

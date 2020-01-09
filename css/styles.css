@@ -1,0 +1,176 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  text-align:center;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+  background-image:url("../img/background.jpg");
+}
+
+main{
+  width:80%;
+}
+
+.main-image{
+  width:100%;
+}
+
+.email-signup{
+  background:#024638;
+  margin-top:30px;
+  padding:25px;
+  border-radius:5px;
+  color:white;
+  opacity:0.5;
+  transition:0.2s;
+}
+
+.email-signup:hover{
+  opacity:1;
+}
+
+.email-signup h2{
+  line-height:1.2;
+  font-size:1.5rem;
+}
+
+.email-signup form{
+  margin-top:20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
+.email-signup form label{
+  font-size:1.3rem;
+}
+
+.email-signup form .form-group-email{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.email-signup form .form-group-email input{
+  width:90%;
+  padding:10px;
+  border:0;
+  border-radius:3px;
+  font-size:1.2rem;
+}
+
+
+.email-signup form .checkbox-group{
+  display:flex;
+  width:90%;
+  align-items:center;
+}
+
+.email-signup form .checkbox-group input.largerCheckbox {
+	width:75px !important;
+  height:75px !important;
+}
+
+.email-signup form .checkbox-group label{
+  text-align:left;
+  margin-left:20px;
+}
+
+.email-signup form .submit-button{
+  width:100px !important;
+  padding:10px 10px;
+  font-size:1.3rem;
+  border:0;
+  background-color:white;
+  cursor:pointer;
+  border-radius:3px;
+  margin-top:30px;
+}
+
+.social-media {
+  display:flex;
+  justify-content: center;
+  margin-top:30px;
+
+}
+
+.social-media img{
+  width:50px;
+  margin: 0 5px;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.social-media img:hover{
+  opacity:1;
+  transform:scale(1.1);
+}
+
+/*Breakpoint 768px*/
+@media (min-width:500px) {
+  main{
+    width:80%;
+    max-width:800px;
+  }
+
+  .main-image{
+    width:50%;
+  }
+
+  .email-signup{
+    max-width:600px;
+    margin: 20px auto;
+    padding:20px 0 10px;
+  }
+
+  .email-signup h2{
+    font-size:1.1rem;
+  }
+
+  .email-signup form .checkbox-group{
+    justify-content: center;
+  }
+
+  .email-signup form label{
+    font-size:0.9rem;
+  }
+
+  .email-signup form .form-group-email{
+    display:flex;
+    flex-direction: row;
+    width:90%;
+    margin-bottom:20px;
+    align-items: center;
+  }
+
+  .email-signup form .form-group-email input{
+    margin-left:20px;
+    font-size:0.8rem;
+  }
+
+  .email-signup form .checkbox-group input.largerCheckbox {
+  	width:25px !important;
+    height:25px !important;
+  }
+
+  .email-signup form .submit-button{
+    margin:0;
+  }
+
+  .social-media img{
+    width:35px;
+  }
+}

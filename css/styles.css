@@ -21,6 +21,7 @@ main{
 
 .main-image{
   width:100%;
+  margin-top:40px;
 }
 
 .email-signup{
@@ -98,12 +99,18 @@ main{
   cursor:pointer;
   border-radius:3px;
   margin-top:30px;
+  transition:0.2s;
+}
+
+.email-signup form .submit-button:hover{
+  transform:scale(1.1);
 }
 
 .social-media {
   display:flex;
   justify-content: center;
   margin-top:30px;
+  margin-bottom:30px;
 
 }
 
